@@ -2351,7 +2351,7 @@ h2 {
         // size: "stretch",
         
       });
-      t.loadFromImages([
+      t.loadFromImages(JSON.parse( new URLSearchParams(window.location.search).get('images'))   ||[
         "https://cdn.pixabay.com/photo/2015/05/03/14/40/woman-751236__340.jpg",
         "https://cdn.pixabay.com/photo/2015/03/04/12/59/bells-flower-658751__340.jpg",
         "https://cdn.pixabay.com/photo/2014/04/10/11/27/flower-320874__340.jpg",
